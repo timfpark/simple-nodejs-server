@@ -1,0 +1,21 @@
+{
+  "name": "simple-nodejs-server",
+  "homepage": "https://github.com/timfpark/simple-nodejs-server",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tmifpark/simple-nodejs-server.git"
+  },
+  "author": "Tim Park <timfpark@gmail.com>",
+  "version": "0.1.0",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "engines": {
+    "node": "0.10.24"
+  },
+  "dependencies": {
+  }
+}
