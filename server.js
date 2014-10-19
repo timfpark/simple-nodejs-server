@@ -10,7 +10,7 @@ var server = http.createServer(function(req, res){
     var elapsedTime = new Date().getTime() - startTime.getTime();
 
     console.log('request received, sending ' + elapsedTime.toString());
-    res.end(elapsedTime + "\n");
+    res.end("This server has been running for " + elapsedTime + "ms.\n");
 });
 
 server.listen(PORT);
