@@ -1,11 +1,9 @@
-var http = require('http');
-
+var express = require('express');
+var app = express();
 var startTime = new Date();
 
-var PORT = process.env.PORT || 5000;
-
-var server = http.createServer(function(req, res){
-    // for any request, print out the number of milliseconds since the server started.
+app.get('/', function(req, res){
+    // print out the number of milliseconds since the server started.
 
     var elapsedTime = new Date().getTime() - startTime.getTime();
 
@@ -13,6 +11,8 @@ var server = http.createServer(function(req, res){
     res.end("This server has been running for " + elapsedTime + "ms.\n");
 });
 
-server.listen(PORT);
+/* Use PORT environment variable if it exists */
+var port = process.env.PORT || 5000;
+server = app.listen(port);
 
-console.log('simple node.js server started and listening on port: ' + PORT);
+console.log('Server listening on port %d in %s mode', server.address().port, app.settings.env);
