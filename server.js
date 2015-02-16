@@ -12,7 +12,7 @@ app.get('/', function(req, res){
 });
 
 /* Use PORT environment variable if it exists */
-var port = process.env.PORT || 5000;
+var port = process.env.PORT || 8080;
 server = app.listen(port);
 
 console.log('Server listening on port %d in %s mode', server.address().port, app.settings.env);
