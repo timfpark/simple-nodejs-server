@@ -6,7 +6,7 @@
     "url": "https://github.com/tmifpark/simple-nodejs-server.git"
   },
   "author": "Tim Park <timfpark@gmail.com>",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "licenses": [
     {
       "type": "MIT",
