@@ -17,6 +17,7 @@
     "node": "6.2.x"
   },
   "dependencies": {
-    "express": "^4.13.3"    
+    "express": "^4.13.3",
+    "pg": "^6.1.2"
   }
 }
