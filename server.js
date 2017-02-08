@@ -51,7 +51,7 @@ app.get('/query', function(req, res) {
             }
 
             let requestDuration = Date.now() - requestStartTimestamp;
-            res.send(`${results.rows[0].welcome}! (took ${requestDuration}ms)`);
+            res.send(`${results.rows[0].welcome}! (took ${requestDuration}ms)\n`);
         });
     });
 });
