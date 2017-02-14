@@ -23,12 +23,13 @@ const express = require('express'),
       url = require('url');
 
 let app = express(),
-    serverStartTime = Date.now();
+    serverStartTime = Date.now(),
+    randomId = Math.random() * 10000000000000000;
 
 app.get('/', function(req, res){
     // print out the number of milliseconds since the server started.
     var elapsedTime = Date.now() - serverStartTime;
-    res.end(`This server has been running for ${elapsedTime}ms.\n`);
+    res.end(`Service instance ${randomId} has been running for ${elapsedTime}ms.\n`);
 });
 
 app.get('/query', function(req, res) {
